@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Aman Yadav</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('background.jpg') no-repeat center center/cover;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+            transition: color 0.3s ease;
+        }
+
+        header {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #ff6347;
+        }
+
+        main {
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            color: #ff6347;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 15px;
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .image-gallery div {
+            margin-bottom: 20px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #ff6347;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-gallery h3 {
+            color: #ff6347;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+            color: #ccc;
+            margin-top: 30px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        footer ul li a:hover {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        /* Social Links */
+        .social-links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: #ff6347;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .social-links i {
+            margin-right: 8px;
+        }
+
+        /* Go to Top Button */
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #topBtn:hover {
+            background-color: #e5533c;
+        }
+
+        /* Show button when scrolled down */
+        body.scrolled #topBtn {
+            display: block;
+        }
+    </style>
+
+    <script>
+        window.onscroll = function() {
+            const topBtn = document.getElementById("topBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+    
+    <header>
+        <h1>Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Education Section -->
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor of Cyber Security and Digital Forensics</strong><br>
+                    The British College Nepal, Kathmandu<br>
+                    University of West England | 2020 - 2024
+                </li>
+            </ul>
+        </section>
+
+        <!-- Achievements Section -->
+        <section>
+            <h2>Achievements</h2>
+            <div class="image-gallery">
+                <div>
+                    <h3>Introduction to Cyber Forensics</h3>
+                    <img src="cyberforensic.png" alt="Cyber Forensics Achievement">
+                </div>
+                <div>
+                    <h3>Ethical Hacking</h3>
+                    <img src="EC Certificate(Aman Yadav).png" alt="Ethical Hacking Certificate">
+                </div>
+                <div>
+                    <h3>Introduction to Cryptography</h3>
+                    <img src="cryptography.png" alt="Cryptography Certificate">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, C++</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Security:</strong> Cybersecurity, Digital Forensics</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section -->
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Currently seeking an internship in Cybersecurity</strong><br>
+                    Kathmandu<br>
+                    <p>Beginner in penetration testing, network security monitoring, and incident response. Assisted in writing reports and vulnerability assessments.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aman-%C3%BD%C3%A0%C4%8Fav-117b73309/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Aman9872" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.facebook.com/profile.php?id=100011441902963" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Back to <a href="#" onclick="scrollToTop()">Top</a></p>
+    </footer>
+
+    <button id="topBtn" onclick="scrollToTop()">Top</button>
+
+</body>
+</html>
